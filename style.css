@@ -1,8 +1,49 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 canvas {
   display: block;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 500px;
+  padding: 12px;
+  font-family: "Varela Round", sans-serif;
+  border: solid 2px black;
 }
